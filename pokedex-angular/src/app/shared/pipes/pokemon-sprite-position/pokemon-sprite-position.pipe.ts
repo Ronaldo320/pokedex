@@ -16,13 +16,17 @@ export class PokemonSpritePositionPipe implements PipeTransform {
     const {
       sprites: { height, width, url },
     } = pokedexVersion;
+    
+    // FIX DE MINÚSCULAS: Forzamos la URL a minúsculas para Azure
+    const lowerCaseUrl = url.toLowerCase();
+    
     const position = pokemonNumber - 1;
     const numberDiv = parseFloat((position / 10).toString()).toFixed(1);
     const posX = parseInt(numberDiv.substring(numberDiv.toString().length - 1), 10) * width;
     const posY = Math.floor(parseFloat(numberDiv)) * height;
 
     return {
-      backgroundImage: `url(${url})`,
+      backgroundImage: `url(${lowerCaseUrl})`, // Usamos la URL corregida
       backgroundPosition: `-${posX}px -${posY}px`,
       height: `${height}px`,
       width: `${width}px`,
