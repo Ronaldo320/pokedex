@@ -1,4 +1,4 @@
-# 🛠️ Bitácora de Despliegue Técnico y Seguridad
+#  Bitácora de Despliegue Técnico y Seguridad
 
 Este documento detalla el procedimiento profesional seguido para la puesta en producción de la PokeDex, asegurando un entorno de alta disponibilidad, automatización mediante CI/CD y un robusto endurecimiento (hardening) de seguridad.
 
@@ -31,6 +31,7 @@ Se creó el archivo `staticwebapp.config.json` con la siguiente estructura:
     "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
   }
 }
+```
 
 ## 3. Desafío Maestro: Dominio Personalizado y Networking
 Como parte de la excelencia técnica, se migró la aplicación de la URL genérica de Azure a un dominio personalizado profesional.
