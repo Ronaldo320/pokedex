@@ -1,7 +1,5 @@
 #  Bitácora de Despliegue Técnico y Seguridad
-
 Este documento detalla el procedimiento profesional seguido para la puesta en producción de la PokeDex, asegurando un entorno de alta disponibilidad, automatización mediante CI/CD y un robusto endurecimiento (hardening) de seguridad.
-
 ## 1. Infraestructura y Automatización (CI/CD)
 Para cumplir con los estándares de **PumasLab**, se seleccionó **Azure Static Web Apps** por su integración nativa con GitHub.
 
